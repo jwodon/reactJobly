@@ -1,0 +1,109 @@
+/* App.css */
+
+/* General styles for the entire app */
+
+/* Center align the entire app content */
+.App {
+    text-align: center;
+}
+
+/* Logo animation styles */
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+/* Header styles */
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+/* Link styles */
+.App-link {
+    color: #61dafb;
+}
+
+/* Navbar styles */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+nav a.active {
+    border-bottom: 2px solid white;
+}
+
+nav a:hover {
+    background-color: #444;
+}
+
+/* Active link styles */
+.active-link {
+    font-weight: bold;
+    color: blue;
+}
+
+/* Body background color */
+body {
+    background-color: cadetblue;
+}
+
+/* Container for company and job cards */
+.CompanyList-container,
+.JobList-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center items horizontally */
+    max-width: 80%; /* Limit container width */
+    margin: 0 auto; /* Center container horizontally */
+}
+
+/* Card styles for both companies and jobs */
+.CompanyCard,
+.JobCard {
+    display: block;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Vertical gap between cards */
+    padding: 20px; /* Increased padding for a more spacious look */
+    text-decoration: none;
+    color: #212529;
+    width: 100%; /* Cards take up 100% width of their container */
+    max-width: 600px; /* Adjust maximum width of cards */
+}
+
+.CompanyCard:hover,
+.JobCard:hover {
+    background-color: #e9ecef;
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 768px) {
+    .CompanyCard,
+    .JobCard {
+        max-width: 1000px; /* Increase max-width for larger screens */
+    }
+}
